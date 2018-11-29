@@ -47,7 +47,7 @@
         <a href="#galerie" class="w3-bar-item w3-button js-scrollTo">Galerie</a>
         <a class="elysee w3-bar-item">|</a>
         <a href="#contact" class="w3-bar-item w3-button js-scrollTo">Contact</a>
-        <a href="#" class=" w3-right w3-bar-item w3-button w3-elysee">Réservation</a>
+        <a href="./reservation.php" class=" w3-right w3-bar-item w3-button w3-elysee">Réservation</a>
     </div>
 </div>
 
@@ -60,10 +60,37 @@
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-middle w3-center">
-        <p><a href="#menu" class="w3-button w3-xxlarge w3-black js-scrollTo">Voir le menu</a></p>
+    <div class="centered">
+        <p class="logo" data-aos="flip-up" data-aos-duration="3000">
+            <img src="src/images/les-elysées.png" style="width:100%;" alt="logo"><br>
+            <a href="#menu" class="logo w3-button w3-xxlarge w3-black js-scrollTo">Voir le menu</a>
+        </p>
     </div>
 </header>
+<div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="histoire">
+    <div class="w3-content">
+        <div class="w3-row">
+            <div class="w3-col s6 offset-3">
+                <img src="src/images/les-elysées.png" style="width:100%;" alt="logo">
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <img src="./src/images/restaurant2.JPG" style="width: 100%;" alt="restaurant">
+            </div>
+            <div class="w3-col s6">
+                <p class="w3-justify" data-aos="fade-left" data-aos-duration="3000">
+                    <b>Notre Histoire</b><br>
+                    Le restaurant Les Elysées se tient sur la plus belle avenue du monde depuis
+                    plus de 50 ans.<br>
+                    Venez découvrir de nouvelles saveurs dans ce restaurant gastronomique
+                    et profiter de l'ambiance qui y règne.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
@@ -184,15 +211,17 @@
         <div class="w3-row">
             <div class=" w3-col s6">
                 <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
-                <p class="w3-left w3-justify" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500"> lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p class="w3-left w3-justify" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500">
+                    Notre Chef et son équipe vous préparerons les meilleurs plats avec des produits frais,
+                    des menus de saison et suivant l'arrivage des marchés. Redécouvrez des saveurs grâce à notre Chef.
                 </p>
             </div>
-            <div class=" w3-col s6">
-                <!-- VIDEO DU CHEF -->
+            <div class=" w3-col s5 offset-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oYwqEeOM_zY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -204,37 +233,37 @@
     <div class="w3-content">
         <h1 class="w3-left-align w3-jumbo" style="margin-bottom:64px"><span class="elysee">| </span> LA GALERIE</h1>
         <div class="w3-row">
-            <div class="w3-col s3 w3-hover-opacity" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
+            <div class="w3-col s3 w3-hover-opacity" data-aos="fade-right" data-aos-duration="2100" data-aos-delay="200">
+                <img src="src/images/plat.jpg" style="width:100%;" class="w3-left zoom" alt="Plat">
             </div>
             <div class="w3-col s4 offset-1 w3-hover-opacity" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
+                <img src="src/images/plat1.jpg" style="width:100%;" class="w3-left zoom" alt="Plat">
             </div>
-            <div class="w3-col s3 offset-1 w3-hover-opacity" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
-            </div>
-        </div>
-        <br>
-        <div class="w3-row">
-            <div class="w3-col s3 w3-hover-opacity" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
-            </div>
-            <div class="w3-col s3 offset-1 w3-hover-opacity" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
-            </div>
-            <div class="w3-col s4 offset-1 w3-hover-opacity" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
+            <div class="w3-col s3 offset-1 w3-hover-opacity" data-aos="fade-left" data-aos-duration="2300" data-aos-delay="100">
+                <img src="src/images/plat2.jpg" style="width:100%;" class="w3-left zoom" alt="Plat">
             </div>
         </div>
         <br>
         <div class="w3-row">
-            <div class="w3-col s4 w3-hover-opacity" data-aos="fade-right"data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
+            <div class="w3-col s3 w3-hover-opacity" data-aos="fade-right" data-aos-duration="1900" data-aos-delay="800">
+                <img src="src/images/plat5.jpg" style="width:100%;" class="w3-left zoom" alt="Plat">
             </div>
-            <div class="w3-col s3 offset-1 w3-hover-opacity" data-aos="fade-up"data-aos-duration="2500" data-aos-delay="500">
-                <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
+            <div class="w3-col s3 offset-1 w3-hover-opacity" data-aos="fade-up" data-aos-duration="1850" data-aos-delay="200">
+                <img src="src/images/plat3.jpg" style="width:100%;" class="w3-left zoom" alt="Plat">
             </div>
-            <div class="w3-col s3 offset-1 w3-hover-opacity container" data-aos="fade-left"data-aos-duration="2500" data-aos-delay="500">
+            <div class="w3-col s4 offset-1 w3-hover-opacity" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="500">
+                <img src="src/images/restaurant.JPG" style="width:100%;" class="w3-left zoom" alt="Restaurant">
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col s4 w3-hover-opacity" data-aos="fade-right"data-aos-duration="3000" data-aos-delay="100">
+                <img src="src/images/plat4.jpg" style="width:100%;" class="w3-left zoom" alt="Plat">
+            </div>
+            <div class="w3-col s3 offset-1 w3-hover-opacity" data-aos="fade-up"data-aos-duration="1200">
+                <img src="src/images/restaurant2.JPG" style="width:100%;" class="w3-left zoom" alt="Restaurant">
+            </div>
+            <div class="w3-col s3 offset-1 w3-hover-opacity container" data-aos="fade-left"data-aos-duration="2000" data-aos-delay="200">
                 <img src="src/images/chef.jpg" style="width:100%;" class="w3-left zoom" alt="Chef">
                 <div class="centered"> Voir plus de photos sur Instagram</div>
             </div>
@@ -282,11 +311,11 @@
             </div>
             <div class="w3-col s5 offset-1">
                 <div>
-                    <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">Adresse: </p>
-                    <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">--------------------------</p>
-                    <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">Horaires:</p>
+                    <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">Adresse: </p>
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">74 Av. des Champs-Elysées</p>
+                    <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500">Horaires:</p>
                     <div class="w3-col s6 w3-justify">
-                        <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
+                        <p data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
                             Lun - 18:00 - 00:00<span class="elysee"> | </span>
                             Mer - 18:00 - 00:00<span class="elysee"> | </span>
                             Ven - 18:00 - 00:00<span class="elysee"> | </span>
@@ -294,14 +323,14 @@
                         </p>
                     </div>
                     <div class="w3-col s6 w3-justify">
-                        <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
+                        <p data-aos="fade-up" data-aos-duration="1700" data-aos-delay="500">
                             Mar - 18:00 - 00:00
                             Jeu - 18:00 - 00:00
                             Sam - 18:00 - 00:00
                             & jours fériés
                         </p>
                     </div>
-                    <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
+                    <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                         contact@les-élysées.com
                     </p>
                     <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
@@ -309,25 +338,22 @@
                     </p>
                     <div class="w3-row" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="500">
                         <div class="w3-col s5 offset-6">
-                            <button class="w3-button w3-light-grey w3-block">RESERVER</button>
+                            <a href="./reservation.php" class="w3-button">Réserver</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+        <br>
         <div class="w3-row">
             <div class="w3-col s5">
-                &nbsp;
-                <!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">-->
+                <img src="./src/images/map2.JPG" class="w3-image w3-greyscale" style="width:100%;">
             </div>
             <div class="w3-col s6 offset-1">
                 <h1 class="w3-left-align w3-jumbo" style="margin-bottom:64px"><span class="elysee">| </span> VENIR AUX ELYSEES</h1>
-                <p data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500" class="w3-left w3-justify"> lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
+                <p data-aos="fade-right" data-aos-duration="2500" data-aos-delay="500" class="w3-left w3-justify"> Par les transports en commun, le restaurant se trouve entre les stations <b>Georges V</b> et <b>Franklin D Roosevelt</b> de la ligne 1.
+                    Un parking sécurisé est disponible à côté du restaurant. Venez profiter de la plus belle avenue du monde, aux Elysées.
                 </p>
             </div>
         </div>

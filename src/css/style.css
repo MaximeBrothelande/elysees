@@ -5,7 +5,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Letter Gothic Std"}
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../images/salle.jpg");
-    min-height: 90%;
+    min-height: 100%;
 }
 .container{
     position: relative;
@@ -20,7 +20,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Letter Gothic Std"}
 footer{
     border-top: #e2c076 thin solid;
 }
-
+.logo {
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0.8;
+}
+.map{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/map2.JPG");
+    min-height: 100%;
+}
 
 .zoom{
     transition: 0.5s;
@@ -29,6 +39,10 @@ footer{
     transform: scale(1.1);
 }
 
-
+.formulaire{
+    background-color: white;
+    border-radius: 3px;
+    opacity: 0.9;
+}
 
 
